@@ -1,5 +1,5 @@
-##Python
-###django web框架学习(https://www.imooc.com/video/13928）
+#Python
+##django web框架学习(https://www.imooc.com/video/13928）<br/>
 1.编写model文件<br/>
 2.执行`python manage.py makemigrations`<br/>
 3.执行`python manage.py migrate`<br/>
