@@ -1,5 +1,7 @@
-#Python
-##django web框架学习(https://www.imooc.com/video/13928）<br/>
+Python
+=============
+django web框架学习(https://www.imooc.com/video/13928）
+-------------
 1.编写model文件<br/>
 2.执行`python manage.py makemigrations`<br/>
 3.执行`python manage.py migrate`<br/>
@@ -9,3 +11,7 @@
 
 启动项目服务
 `python manage.py runserver`
+
+MySQLdb 数据库操作
+-------------
+module database
