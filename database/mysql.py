@@ -6,7 +6,6 @@ import config_data
 # 打开数据库连接
 try:
     db = MySQLdb.connect(config_data.DB_HOST, config_data.DB_USER, config_data.DB_PASSWORD, config_data.DB_NAME)
-
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
 
@@ -29,7 +28,7 @@ try:
         # 打印结果
         print ("uid=%d, name=%s, age=%d, sex=%s" % (uid, name, age, sex))
 
-except:
+except IOError:
     print ("Error: unable to fetch data")
 
 # 关闭数据库连接
