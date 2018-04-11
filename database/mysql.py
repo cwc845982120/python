@@ -11,11 +11,7 @@ try:
 
     # SQL 查询语句
     sql = "SELECT * FROM T_users"
-except IOError:
-    print ("Error: unable to fetch data")
 
-# noinspection PyBroadException
-try:
     # 执行SQL语句
     cursor.execute(sql)
     # 获取所有记录列表
@@ -23,13 +19,13 @@ try:
     for row in results:
         uid = row[0]
         name = row[1]
-        age = row[2]
-        sex = row[3]
+        sex = row[2]
+        age = row[3]
         # 打印结果
-        print ("uid=%d, name=%s, age=%d, sex=%s" % (uid, name, age, sex))
+        print ("id=%d, name=%s, sex=%s, age=%d" % (uid, name, sex, age))
+
+    # 关闭数据库连接
+    db.close()
 
 except IOError:
     print ("Error: unable to fetch data")
-
-# 关闭数据库连接
-db.close()
